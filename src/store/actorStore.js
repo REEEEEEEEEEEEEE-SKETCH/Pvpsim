@@ -46,6 +46,12 @@ export function createActorStore(initial = {}) {
     // accumulator crosses (100 * (30 + prayer_bonus)). Integer math, no FP drift.
     prayerDrainAcc: 0,
 
+    // Combo-eat cooldown: karambwan can only be eaten once per tick; blocked by > 0.
+    comboCooldown: 0,
+    // Stat boost drain accumulator: incremented each tick; at 100 all boosts
+    // drain 1 point toward base level (toward 0 boost delta).
+    statDrainAcc: 0,
+
     // Derived selectors — always reflect the latest equipment, including
     // mid-tick switches resolved by ActionQueue at priority 2.
     getBonuses: () => computeBonuses(get().equipment),
@@ -180,6 +186,22 @@ export function createActorStore(initial = {}) {
     setEatCooldown: ticks => set({ eatCooldown: Math.max(0, ticks) }),
     decrementEatCooldown: () =>
       set(state => ({ eatCooldown: Math.max(0, state.eatCooldown - 1) })),
+
+    setComboCooldown: ticks => set({ comboCooldown: Math.max(0, ticks) }),
+    decrementComboCooldown: () =>
+      set(state => ({ comboCooldown: Math.max(0, state.comboCooldown - 1) })),
+
+    setStatDrainAcc: n => set({ statDrainAcc: n }),
+
+    drainStatBoosts: () =>
+      set(state => {
+        const boosts = { ...state.boosts };
+        for (const stat of Object.keys(boosts)) {
+          if (boosts[stat] > 0) boosts[stat] -= 1;
+          else if (boosts[stat] < 0) boosts[stat] += 1;
+        }
+        return { boosts };
+      }),
 
     setInventory: inv => set({ inventory: [...inv] }),
     addItem: itemId =>

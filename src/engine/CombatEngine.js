@@ -130,6 +130,7 @@ export function decrementCombatCooldowns(...stores) {
   for (const s of stores) {
     s.getState().decrementAttackCooldown();
     s.getState().decrementEatCooldown();
+    s.getState().decrementComboCooldown();
   }
 }
 
