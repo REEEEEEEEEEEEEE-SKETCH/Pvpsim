@@ -1,0 +1,97 @@
+{
+  "thick_skin": {
+    "id": "thick_skin", "name": "Thick Skin", "level": 1, "drain_per_min": 6,
+    "group": "defence_buff",
+    "bonuses": { "defence_mult": 1.05 }
+  },
+  "burst_of_strength": {
+    "id": "burst_of_strength", "name": "Burst of Strength", "level": 4, "drain_per_min": 6,
+    "group": "strength_buff",
+    "bonuses": { "strength_mult": 1.05 }
+  },
+  "clarity_of_thought": {
+    "id": "clarity_of_thought", "name": "Clarity of Thought", "level": 7, "drain_per_min": 6,
+    "group": "attack_buff",
+    "bonuses": { "attack_mult": 1.05 }
+  },
+  "rock_skin": {
+    "id": "rock_skin", "name": "Rock Skin", "level": 10, "drain_per_min": 12,
+    "group": "defence_buff",
+    "bonuses": { "defence_mult": 1.10 }
+  },
+  "superhuman_strength": {
+    "id": "superhuman_strength", "name": "Superhuman Strength", "level": 13, "drain_per_min": 12,
+    "group": "strength_buff",
+    "bonuses": { "strength_mult": 1.10 }
+  },
+  "improved_reflexes": {
+    "id": "improved_reflexes", "name": "Improved Reflexes", "level": 16, "drain_per_min": 12,
+    "group": "attack_buff",
+    "bonuses": { "attack_mult": 1.10 }
+  },
+  "steel_skin": {
+    "id": "steel_skin", "name": "Steel Skin", "level": 28, "drain_per_min": 24,
+    "group": "defence_buff",
+    "bonuses": { "defence_mult": 1.15 }
+  },
+  "ultimate_strength": {
+    "id": "ultimate_strength", "name": "Ultimate Strength", "level": 31, "drain_per_min": 24,
+    "group": "strength_buff",
+    "bonuses": { "strength_mult": 1.15 }
+  },
+  "incredible_reflexes": {
+    "id": "incredible_reflexes", "name": "Incredible Reflexes", "level": 34, "drain_per_min": 24,
+    "group": "attack_buff",
+    "bonuses": { "attack_mult": 1.15 }
+  },
+  "protect_from_magic": {
+    "id": "protect_from_magic", "name": "Protect from Magic", "level": 37, "drain_per_min": 12,
+    "group": "overhead",
+    "bonuses": { "pvp_protect": "magic", "damage_mult": 0.6 }
+  },
+  "protect_from_missiles": {
+    "id": "protect_from_missiles", "name": "Protect from Missiles", "level": 40, "drain_per_min": 12,
+    "group": "overhead",
+    "bonuses": { "pvp_protect": "ranged", "damage_mult": 0.6 }
+  },
+  "protect_from_melee": {
+    "id": "protect_from_melee", "name": "Protect from Melee", "level": 43, "drain_per_min": 12,
+    "group": "overhead",
+    "bonuses": { "pvp_protect": "melee", "damage_mult": 0.6 }
+  },
+  "eagle_eye": {
+    "id": "eagle_eye", "name": "Eagle Eye", "level": 44, "drain_per_min": 12,
+    "group": "ranged_buff",
+    "bonuses": { "ranged_attack_mult": 1.15, "ranged_strength_mult": 1.15 }
+  },
+  "mystic_might": {
+    "id": "mystic_might", "name": "Mystic Might", "level": 45, "drain_per_min": 12,
+    "group": "magic_buff",
+    "bonuses": { "magic_attack_mult": 1.15, "magic_defence_mult": 1.15 }
+  },
+  "chivalry": {
+    "id": "chivalry", "name": "Chivalry", "level": 60, "drain_per_min": 24,
+    "group": "melee_combo",
+    "bonuses": { "attack_mult": 1.15, "strength_mult": 1.18, "defence_mult": 1.20 }
+  },
+  "piety": {
+    "id": "piety", "name": "Piety", "level": 70, "drain_per_min": 24,
+    "group": "melee_combo",
+    "bonuses": { "attack_mult": 1.20, "strength_mult": 1.23, "defence_mult": 1.25 }
+  },
+  "rigour": {
+    "id": "rigour", "name": "Rigour", "level": 74, "drain_per_min": 24,
+    "group": "ranged_combo",
+    "bonuses": { "ranged_attack_mult": 1.20, "ranged_strength_mult": 1.23, "defence_mult": 1.25 }
+  },
+  "augury": {
+    "id": "augury", "name": "Augury", "level": 77, "drain_per_min": 24,
+    "group": "magic_combo",
+    "bonuses": { "magic_attack_mult": 1.25, "magic_defence_mult": 1.25, "defence_mult": 1.25 }
+  },
+  "smite": {
+    "id": "smite", "name": "Smite", "level": 52, "drain_per_min": 24,
+    "group": "overhead",
+    "bonuses": { "smite": true, "smite_ratio": 0.25 }
+  }
+}

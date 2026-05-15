@@ -1,0 +1,45 @@
+{
+  "super_combat": {
+    "id": "super_combat",
+    "name": "Super combat potion",
+    "boosts": [
+      { "stat": "attack",   "flat": 5, "level_pct": 0.15 },
+      { "stat": "strength", "flat": 5, "level_pct": 0.15 },
+      { "stat": "defence",  "flat": 5, "level_pct": 0.15 }
+    ]
+  },
+  "ranging": {
+    "id": "ranging",
+    "name": "Ranging potion",
+    "boosts": [
+      { "stat": "ranged", "flat": 4, "level_pct": 0.10 }
+    ]
+  },
+  "super_restore": {
+    "id": "super_restore",
+    "name": "Super restore",
+    "restore": [
+      { "stat": "attack",   "flat": 8, "max_pct": 0.25 },
+      { "stat": "strength", "flat": 8, "max_pct": 0.25 },
+      { "stat": "defence",  "flat": 8, "max_pct": 0.25 },
+      { "stat": "ranged",   "flat": 8, "max_pct": 0.25 },
+      { "stat": "magic",    "flat": 8, "max_pct": 0.25 },
+      { "stat": "prayer",   "flat": 8, "max_pct": 0.25 }
+    ]
+  },
+  "saradomin_brew": {
+    "id": "saradomin_brew",
+    "name": "Saradomin brew",
+    "heal_pct_of_max": 0.15,
+    "heal_flat": 2,
+    "boosts": [
+      { "stat": "defence",  "flat": 0, "level_pct": 0.20 }
+    ],
+    "drains": [
+      { "stat": "attack",   "level_pct": 0.10 },
+      { "stat": "strength", "level_pct": 0.10 },
+      { "stat": "magic",    "level_pct": 0.10 },
+      { "stat": "ranged",   "level_pct": 0.10 }
+    ]
+  }
+}

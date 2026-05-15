@@ -1,0 +1,72 @@
+{
+  "armadyl_godsword": {
+    "weapon_id": "armadyl_godsword",
+    "name": "Judgement",
+    "energy_cost": 50,
+    "extra_attack_delay_ticks": 0,
+    "accuracy_mult": 2.0,
+    "max_hit_mult": 1.375,
+    "hits": 1
+  },
+  "dragon_dagger": {
+    "weapon_id": "dragon_dagger",
+    "name": "Puncture",
+    "energy_cost": 25,
+    "extra_attack_delay_ticks": 0,
+    "accuracy_mult": 1.15,
+    "max_hit_mult": 1.15,
+    "hits": 2
+  },
+  "dragon_claws": {
+    "weapon_id": "dragon_claws",
+    "name": "Slice and Dice",
+    "energy_cost": 50,
+    "extra_attack_delay_ticks": 0,
+    "accuracy_mult": 1.0,
+    "max_hit_mult": 1.0,
+    "hits": 4,
+    "cascade": true
+  },
+  "granite_maul": {
+    "weapon_id": "granite_maul",
+    "name": "Quick Smash",
+    "energy_cost": 50,
+    "extra_attack_delay_ticks": 0,
+    "accuracy_mult": 1.0,
+    "max_hit_mult": 1.0,
+    "hits": 1,
+    "instant": true
+  },
+  "dragon_warhammer": {
+    "weapon_id": "dragon_warhammer",
+    "name": "Smash",
+    "energy_cost": 50,
+    "extra_attack_delay_ticks": 0,
+    "accuracy_mult": 1.0,
+    "max_hit_mult": 1.5,
+    "hits": 1,
+    "on_hit_effect": "reduce_defence_30pct"
+  },
+  "voidwaker": {
+    "weapon_id": "voidwaker",
+    "name": "Voidwaker's Edge",
+    "energy_cost": 50,
+    "extra_attack_delay_ticks": 0,
+    "accuracy_mult": 1.0,
+    "max_hit_mult": 1.5,
+    "hits": 1,
+    "guaranteed_hit": true,
+    "damage_floor_pct": 0.5,
+    "damage_ceiling_pct": 1.5
+  },
+  "volatile_nightmare_staff": {
+    "weapon_id": "volatile_nightmare_staff",
+    "name": "Volatile",
+    "energy_cost": 55,
+    "extra_attack_delay_ticks": 0,
+    "accuracy_mult": 1.5,
+    "max_hit_mult": 1.0,
+    "hits": 1,
+    "magic_spec_max_base": 58
+  }
+}

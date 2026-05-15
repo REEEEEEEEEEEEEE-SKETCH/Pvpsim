@@ -1,0 +1,398 @@
+{
+  "abyssal_whip": {
+    "id": "abyssal_whip",
+    "name": "Abyssal whip",
+    "slot": "weapon",
+    "two_handed": false,
+    "attack_speed": 4,
+    "attack_styles": ["flick", "lash", "deflect"],
+    "weapon_category": "whip",
+    "default_attack_type": "slash",
+    "requirements": { "attack": 70 },
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 82, "attack_crush": 0, "attack_magic": 0, "attack_ranged": 0,
+      "defence_stab": 0, "defence_slash": 0, "defence_crush": 0, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 82, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "dragon_scimitar": {
+    "id": "dragon_scimitar",
+    "name": "Dragon scimitar",
+    "slot": "weapon",
+    "two_handed": false,
+    "attack_speed": 4,
+    "attack_styles": ["chop", "slash", "lunge", "block"],
+    "weapon_category": "scimitar",
+    "default_attack_type": "slash",
+    "requirements": { "attack": 60 },
+    "equipment": {
+      "attack_stab": 8, "attack_slash": 67, "attack_crush": 0, "attack_magic": 0, "attack_ranged": 0,
+      "defence_stab": 0, "defence_slash": 1, "defence_crush": 0, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 66, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "granite_maul": {
+    "id": "granite_maul",
+    "name": "Granite maul",
+    "slot": "weapon",
+    "two_handed": true,
+    "attack_speed": 7,
+    "attack_styles": ["pound", "pummel"],
+    "weapon_category": "bludgeon",
+    "default_attack_type": "crush",
+    "requirements": { "attack": 50, "strength": 50 },
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 0, "attack_crush": 81, "attack_magic": 0, "attack_ranged": 0,
+      "defence_stab": 0, "defence_slash": 0, "defence_crush": 0, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 79, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "armadyl_godsword": {
+    "id": "armadyl_godsword",
+    "name": "Armadyl godsword",
+    "slot": "weapon",
+    "two_handed": true,
+    "attack_speed": 6,
+    "attack_styles": ["chop", "slash", "smash", "block"],
+    "weapon_category": "godsword",
+    "default_attack_type": "slash",
+    "requirements": { "attack": 75 },
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 132, "attack_crush": 80, "attack_magic": 0, "attack_ranged": 0,
+      "defence_stab": 0, "defence_slash": 0, "defence_crush": 0, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 132, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "dragon_dagger": {
+    "id": "dragon_dagger",
+    "name": "Dragon dagger",
+    "slot": "weapon",
+    "two_handed": false,
+    "attack_speed": 4,
+    "attack_styles": ["stab", "lunge", "slash", "block"],
+    "weapon_category": "dagger",
+    "default_attack_type": "stab",
+    "requirements": { "attack": 60 },
+    "equipment": {
+      "attack_stab": 40, "attack_slash": 25, "attack_crush": -4, "attack_magic": 1, "attack_ranged": 0,
+      "defence_stab": 0, "defence_slash": 0, "defence_crush": 0, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 40, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "dragon_claws": {
+    "id": "dragon_claws",
+    "name": "Dragon claws",
+    "slot": "weapon",
+    "two_handed": false,
+    "attack_speed": 4,
+    "attack_styles": ["chop", "slash", "lunge", "block"],
+    "weapon_category": "claws",
+    "default_attack_type": "slash",
+    "requirements": { "attack": 60 },
+    "equipment": {
+      "attack_stab": 41, "attack_slash": 57, "attack_crush": -4, "attack_magic": 0, "attack_ranged": 0,
+      "defence_stab": 13, "defence_slash": 26, "defence_crush": 8, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 56, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "dragon_warhammer": {
+    "id": "dragon_warhammer",
+    "name": "Dragon warhammer",
+    "slot": "weapon",
+    "two_handed": false,
+    "attack_speed": 6,
+    "attack_styles": ["pound", "pummel", "block"],
+    "weapon_category": "warhammer",
+    "default_attack_type": "crush",
+    "requirements": { "attack": 60 },
+    "equipment": {
+      "attack_stab": -4, "attack_slash": -4, "attack_crush": 95, "attack_magic": 0, "attack_ranged": 0,
+      "defence_stab": 0, "defence_slash": 0, "defence_crush": 0, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 95, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "voidwaker": {
+    "id": "voidwaker",
+    "name": "Voidwaker",
+    "slot": "weapon",
+    "two_handed": false,
+    "attack_speed": 4,
+    "attack_styles": ["stab", "lunge", "slash", "block"],
+    "weapon_category": "dagger",
+    "default_attack_type": "stab",
+    "requirements": { "attack": 75 },
+    "equipment": {
+      "attack_stab": 82, "attack_slash": 82, "attack_crush": 0, "attack_magic": 0, "attack_ranged": 0,
+      "defence_stab": 0, "defence_slash": 0, "defence_crush": 0, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 72, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "volatile_nightmare_staff": {
+    "id": "volatile_nightmare_staff",
+    "name": "Volatile nightmare staff",
+    "slot": "weapon",
+    "two_handed": true,
+    "attack_speed": 5,
+    "attack_styles": ["bash", "pound", "focus", "spell"],
+    "weapon_category": "staff",
+    "default_attack_type": "magic",
+    "requirements": { "magic": 82, "attack": 50 },
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 0, "attack_crush": 50, "attack_magic": 16, "attack_ranged": 0,
+      "defence_stab": 5, "defence_slash": 5, "defence_crush": 5, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 55, "ranged_strength": 0, "magic_damage": 0.15, "prayer": 0
+    }
+  },
+  "rune_crossbow": {
+    "id": "rune_crossbow",
+    "name": "Rune crossbow",
+    "slot": "weapon",
+    "two_handed": true,
+    "attack_speed": 5,
+    "attack_styles": ["accurate", "rapid", "longrange"],
+    "weapon_category": "crossbow",
+    "default_attack_type": "ranged",
+    "requirements": { "ranged": 61 },
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 0, "attack_crush": 0, "attack_magic": 0, "attack_ranged": 90,
+      "defence_stab": 0, "defence_slash": 0, "defence_crush": 0, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 0, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+
+  "neitiznot_helm": {
+    "id": "neitiznot_helm",
+    "name": "Helm of neitiznot",
+    "slot": "head",
+    "requirements": { "defence": 55 },
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 0, "attack_crush": 0, "attack_magic": 0, "attack_ranged": 0,
+      "defence_stab": 31, "defence_slash": 29, "defence_crush": 34, "defence_magic": 1, "defence_ranged": 30,
+      "melee_strength": 3, "ranged_strength": 0, "magic_damage": 0, "prayer": 3
+    }
+  },
+  "fire_cape": {
+    "id": "fire_cape",
+    "name": "Fire cape",
+    "slot": "cape",
+    "requirements": {},
+    "equipment": {
+      "attack_stab": 1, "attack_slash": 1, "attack_crush": 1, "attack_magic": 1, "attack_ranged": 1,
+      "defence_stab": 11, "defence_slash": 11, "defence_crush": 11, "defence_magic": 11, "defence_ranged": 11,
+      "melee_strength": 4, "ranged_strength": 0, "magic_damage": 0, "prayer": 1
+    }
+  },
+  "amulet_of_fury": {
+    "id": "amulet_of_fury",
+    "name": "Amulet of fury",
+    "slot": "neck",
+    "requirements": {},
+    "equipment": {
+      "attack_stab": 10, "attack_slash": 10, "attack_crush": 10, "attack_magic": 10, "attack_ranged": 10,
+      "defence_stab": 15, "defence_slash": 15, "defence_crush": 15, "defence_magic": 15, "defence_ranged": 15,
+      "melee_strength": 8, "ranged_strength": 0, "magic_damage": 0, "prayer": 5
+    }
+  },
+  "amulet_of_strength": {
+    "id": "amulet_of_strength",
+    "name": "Amulet of strength",
+    "slot": "neck",
+    "requirements": {},
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 0, "attack_crush": 0, "attack_magic": 0, "attack_ranged": 0,
+      "defence_stab": 0, "defence_slash": 0, "defence_crush": 0, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 10, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "bandos_chestplate": {
+    "id": "bandos_chestplate",
+    "name": "Bandos chestplate",
+    "slot": "body",
+    "requirements": { "defence": 65 },
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 0, "attack_crush": 0, "attack_magic": -15, "attack_ranged": -10,
+      "defence_stab": 82, "defence_slash": 80, "defence_crush": 72, "defence_magic": 0, "defence_ranged": 84,
+      "melee_strength": 4, "ranged_strength": 0, "magic_damage": 0, "prayer": 1
+    }
+  },
+  "bandos_tassets": {
+    "id": "bandos_tassets",
+    "name": "Bandos tassets",
+    "slot": "legs",
+    "requirements": { "defence": 65 },
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 0, "attack_crush": 0, "attack_magic": -21, "attack_ranged": -7,
+      "defence_stab": 71, "defence_slash": 63, "defence_crush": 66, "defence_magic": 0, "defence_ranged": 69,
+      "melee_strength": 2, "ranged_strength": 0, "magic_damage": 0, "prayer": 1
+    }
+  },
+  "fighter_torso": {
+    "id": "fighter_torso",
+    "name": "Fighter torso",
+    "slot": "body",
+    "requirements": { "defence": 40 },
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 0, "attack_crush": 0, "attack_magic": -6, "attack_ranged": -4,
+      "defence_stab": 62, "defence_slash": 64, "defence_crush": 58, "defence_magic": 0, "defence_ranged": 66,
+      "melee_strength": 4, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "torag_platelegs": {
+    "id": "torag_platelegs",
+    "name": "Torag's platelegs",
+    "slot": "legs",
+    "requirements": { "defence": 70 },
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 0, "attack_crush": 0, "attack_magic": -21, "attack_ranged": -7,
+      "defence_stab": 51, "defence_slash": 49, "defence_crush": 47, "defence_magic": 0, "defence_ranged": 56,
+      "melee_strength": 0, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "rune_platebody": {
+    "id": "rune_platebody",
+    "name": "Rune platebody",
+    "slot": "body",
+    "requirements": { "defence": 40 },
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 0, "attack_crush": 0, "attack_magic": -30, "attack_ranged": -10,
+      "defence_stab": 82, "defence_slash": 80, "defence_crush": 72, "defence_magic": -6, "defence_ranged": 80,
+      "melee_strength": 0, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "rune_platelegs": {
+    "id": "rune_platelegs",
+    "name": "Rune platelegs",
+    "slot": "legs",
+    "requirements": { "defence": 40 },
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 0, "attack_crush": 0, "attack_magic": -21, "attack_ranged": -7,
+      "defence_stab": 51, "defence_slash": 49, "defence_crush": 47, "defence_magic": -4, "defence_ranged": 49,
+      "melee_strength": 0, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "barrows_gloves": {
+    "id": "barrows_gloves",
+    "name": "Barrows gloves",
+    "slot": "hands",
+    "requirements": { "defence": 1 },
+    "equipment": {
+      "attack_stab": 12, "attack_slash": 12, "attack_crush": 12, "attack_magic": 6, "attack_ranged": 12,
+      "defence_stab": 12, "defence_slash": 12, "defence_crush": 12, "defence_magic": 6, "defence_ranged": 12,
+      "melee_strength": 12, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "mithril_gloves": {
+    "id": "mithril_gloves",
+    "name": "Mithril gloves",
+    "slot": "hands",
+    "requirements": {},
+    "equipment": {
+      "attack_stab": 3, "attack_slash": 3, "attack_crush": 3, "attack_magic": 0, "attack_ranged": 0,
+      "defence_stab": 3, "defence_slash": 3, "defence_crush": 3, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 4, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "dragon_boots": {
+    "id": "dragon_boots",
+    "name": "Dragon boots",
+    "slot": "feet",
+    "requirements": { "defence": 60 },
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 0, "attack_crush": 0, "attack_magic": 0, "attack_ranged": 0,
+      "defence_stab": 16, "defence_slash": 17, "defence_crush": 18, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 4, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "climbing_boots": {
+    "id": "climbing_boots",
+    "name": "Climbing boots",
+    "slot": "feet",
+    "requirements": {},
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 0, "attack_crush": 0, "attack_magic": 0, "attack_ranged": 0,
+      "defence_stab": 2, "defence_slash": 2, "defence_crush": 2, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 4, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "berserker_ring_i": {
+    "id": "berserker_ring_i",
+    "name": "Berserker ring (i)",
+    "slot": "ring",
+    "requirements": {},
+    "equipment": {
+      "attack_stab": 4, "attack_slash": 4, "attack_crush": 4, "attack_magic": 0, "attack_ranged": 0,
+      "defence_stab": 4, "defence_slash": 4, "defence_crush": 4, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 8, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "ring_of_recoil": {
+    "id": "ring_of_recoil",
+    "name": "Ring of recoil",
+    "slot": "ring",
+    "requirements": {},
+    "equipment": {
+      "attack_stab": 0, "attack_slash": 0, "attack_crush": 0, "attack_magic": 0, "attack_ranged": 0,
+      "defence_stab": 0, "defence_slash": 0, "defence_crush": 0, "defence_magic": 0, "defence_ranged": 0,
+      "melee_strength": 0, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "dragon_defender": {
+    "id": "dragon_defender",
+    "name": "Dragon defender",
+    "slot": "shield",
+    "requirements": { "attack": 60, "defence": 60 },
+    "equipment": {
+      "attack_stab": 25, "attack_slash": 24, "attack_crush": 23, "attack_magic": -3, "attack_ranged": -2,
+      "defence_stab": 25, "defence_slash": 24, "defence_crush": 23, "defence_magic": -3, "defence_ranged": -2,
+      "melee_strength": 6, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+  "rune_defender": {
+    "id": "rune_defender",
+    "name": "Rune defender",
+    "slot": "shield",
+    "requirements": { "attack": 40, "defence": 40 },
+    "equipment": {
+      "attack_stab": 20, "attack_slash": 19, "attack_crush": 18, "attack_magic": -3, "attack_ranged": -2,
+      "defence_stab": 20, "defence_slash": 19, "defence_crush": 18, "defence_magic": -3, "defence_ranged": -2,
+      "melee_strength": 5, "ranged_strength": 0, "magic_damage": 0, "prayer": 0
+    }
+  },
+
+  "shark": {
+    "id": "shark", "name": "Shark", "slot": "inventory",
+    "consumable": { "type": "food", "heal": 20, "eat_delay": 3, "combo": false }
+  },
+  "manta_ray": {
+    "id": "manta_ray", "name": "Manta ray", "slot": "inventory",
+    "consumable": { "type": "food", "heal": 22, "eat_delay": 3, "combo": false }
+  },
+  "dark_crab": {
+    "id": "dark_crab", "name": "Dark crab", "slot": "inventory",
+    "consumable": { "type": "food", "heal": 22, "eat_delay": 3, "combo": false }
+  },
+  "anglerfish": {
+    "id": "anglerfish", "name": "Anglerfish", "slot": "inventory",
+    "consumable": { "type": "food", "heal": 22, "eat_delay": 3, "combo": false, "overheal": true }
+  },
+  "karambwan": {
+    "id": "karambwan", "name": "Cooked karambwan", "slot": "inventory",
+    "consumable": { "type": "food", "heal": 18, "eat_delay": 2, "combo": true }
+  },
+  "saradomin_brew_4": {
+    "id": "saradomin_brew_4", "name": "Saradomin brew(4)", "slot": "inventory",
+    "consumable": { "type": "brew", "doses": 4, "eat_delay": 3, "combo": false }
+  },
+  "super_combat_potion_4": {
+    "id": "super_combat_potion_4", "name": "Super combat potion(4)", "slot": "inventory",
+    "consumable": { "type": "potion", "potion_id": "super_combat", "doses": 4 }
+  },
+  "ranging_potion_4": {
+    "id": "ranging_potion_4", "name": "Ranging potion(4)", "slot": "inventory",
+    "consumable": { "type": "potion", "potion_id": "ranging", "doses": 4 }
+  },
+  "super_restore_4": {
+    "id": "super_restore_4", "name": "Super restore(4)", "slot": "inventory",
+    "consumable": { "type": "potion", "potion_id": "super_restore", "doses": 4 }
+  }
+}
