@@ -41,6 +41,10 @@ export function createActorStore(initial = {}) {
     attackCooldown: 0,
     eatCooldown: 0,
     inventory: initial.inventory ?? [],
+    // Scaled-integer accumulator for prayer drain. tickPrayerDrain adds
+    // (drain_rate * 30) per tick; one prayer point drains each time the
+    // accumulator crosses (100 * (30 + prayer_bonus)). Integer math, no FP drift.
+    prayerDrainAcc: 0,
 
     // Derived selectors — always reflect the latest equipment, including
     // mid-tick switches resolved by ActionQueue at priority 2.
@@ -107,6 +111,30 @@ export function createActorStore(initial = {}) {
       set(state => ({
         current: { ...state.current, prayer: Math.max(0, state.current.prayer - amt) }
       })),
+
+    // Integer-math drain step. `numerator` = drain_rate * 30 added each tick;
+    // when the accumulator reaches `denominator` (= 100 * (30 + prayer_bonus)),
+    // one prayer point drains and the accumulator wraps. Multi-point drains
+    // per tick (high rate + low bonus) handled by integer division.
+    accumulatePrayerDrain: (numerator, denominator) =>
+      set(state => {
+        const acc = state.prayerDrainAcc + numerator;
+        if (acc < denominator) return { prayerDrainAcc: acc };
+        const drain = Math.floor(acc / denominator);
+        const remainder = acc - drain * denominator;
+        const nextPrayer = state.current.prayer - drain;
+        if (nextPrayer <= 0) {
+          return {
+            prayerDrainAcc: 0,
+            current: { ...state.current, prayer: 0 },
+            activePrayers: []
+          };
+        }
+        return {
+          prayerDrainAcc: remainder,
+          current: { ...state.current, prayer: nextPrayer }
+        };
+      }),
 
     setSpec: pct =>
       set(state => ({
