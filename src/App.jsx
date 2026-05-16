@@ -33,6 +33,7 @@ export default function App() {
   const isRunning = useGameStore(s => s.isRunning);
   const isPaused = useGameStore(s => s.isPaused);
   const difficulty = useGameStore(s => s.difficulty);
+  const winner = useGameStore(s => s.winner);
   const setRunning = useGameStore(s => s.setRunning);
   const setPaused = useGameStore(s => s.setPaused);
   const setDifficulty = useGameStore(s => s.setDifficulty);
@@ -46,7 +47,7 @@ export default function App() {
   // Per-tick game loop subscription
   useEffect(() => {
     const unsubscribe = tickEngine.subscribe(currentTick => {
-      runOneTick({
+      const result = runOneTick({
         player: usePlayerStore,
         bot: useBotStore,
         game: useGameStore,
@@ -56,9 +57,13 @@ export default function App() {
         autoPlayer: true,
         autoBot: true
       });
+      if (result.ended) {
+        tickEngine.pause();
+        setPaused(true);
+      }
     });
     return unsubscribe;
-  }, [queue]);
+  }, [queue, setPaused]);
 
   // ── Lifecycle handlers ──────────────────────────────────────────────────
   const onStart = () => {
@@ -129,6 +134,16 @@ export default function App() {
         onReset={onReset}
         onSetDifficulty={setDifficulty}
       />
+
+      {winner && (
+        <div className={`mt-3 p-3 rounded font-bold text-center text-lg ${
+          winner === 'player' ? 'bg-osrs-green text-black' :
+          winner === 'bot' ? 'bg-osrs-red text-white' :
+          'bg-osrs-yellow text-black'
+        }`}>
+          {winner === 'draw' ? 'DRAW — both at 0 HP' : `${winner.toUpperCase()} WINS`}
+        </div>
+      )}
 
       <div className="flex flex-wrap gap-4 mt-4">
         <LoadoutPicker label="Player loadout" value={playerLoadout} onChange={onPickPlayerLoadout} />

@@ -69,6 +69,25 @@ export function runOneTick(ctx) {
   }
 
   queue.flushTick({ player, bot, game, tick });
+
+  const playerHp = player.getState().current.hp;
+  const botHp = bot.getState().current.hp;
+  const dead = playerHp <= 0 || botHp <= 0;
+  let winner = null;
+  if (dead) {
+    if (playerHp <= 0 && botHp <= 0) winner = 'draw';
+    else if (botHp <= 0) winner = 'player';
+    else winner = 'bot';
+    // Log + record winner exactly once; subsequent dead ticks no-op.
+    if (game?.getState) {
+      const gs = game.getState();
+      if (gs.winner == null && typeof gs.setWinner === 'function') {
+        gs.setWinner(winner);
+        gs.appendLog(`fight over — ${winner} wins`, tick);
+      }
+    }
+  }
+  return { ended: dead, winner, playerHp, botHp };
 }
 
 // Helper for tests / replay: run N ticks with the same setup.
@@ -76,12 +95,10 @@ export function runTicks(n, ctx) {
   let { tick = 0 } = ctx;
   for (let i = 0; i < n; i++) {
     tick += 1;
-    runOneTick({ ...ctx, tick });
-    if (ctx.player.getState().current.hp <= 0 || ctx.bot.getState().current.hp <= 0) {
-      return { tick, ended: true };
-    }
+    const result = runOneTick({ ...ctx, tick });
+    if (result.ended) return { tick, ended: true, winner: result.winner };
   }
-  return { tick, ended: false };
+  return { tick, ended: false, winner: null };
 }
 
 // Convenience for UI: queue a player action that the GameLoop won't generate.

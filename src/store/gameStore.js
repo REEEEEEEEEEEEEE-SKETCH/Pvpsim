@@ -7,10 +7,12 @@ export const useGameStore = create((set, get) => ({
   isPaused: false,
   difficulty: 'medium',
   combatLog: [],
+  winner: null,
 
   setRunning: v => set({ isRunning: v }),
   setPaused: v => set({ isPaused: v }),
   setDifficulty: d => set({ difficulty: d }),
+  setWinner: w => set({ winner: w }),
 
   appendLog: (entry, tick) => set(state => {
     const line = tick !== undefined ? `[t${tick}] ${entry}` : entry;
@@ -22,5 +24,5 @@ export const useGameStore = create((set, get) => ({
   clearLog: () => set({ combatLog: [] }),
 
   reset: () =>
-    set({ isRunning: false, isPaused: false, combatLog: [] })
+    set({ isRunning: false, isPaused: false, combatLog: [], winner: null })
 }));
