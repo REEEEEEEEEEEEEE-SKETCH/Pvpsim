@@ -1,0 +1,122 @@
+{
+  "ags_main": {
+    "name": "AGS Main",
+    "description": "Armadyl godsword for big KO specs; max melee.",
+    "equipment": {
+      "weapon": "armadyl_godsword",
+      "shield": null,
+      "helmet": null,
+      "cape": null,
+      "amulet": null,
+      "ammo": null,
+      "body": null,
+      "legs": null,
+      "gloves": null,
+      "boots": null,
+      "ring": null
+    },
+    "inventory": ["shark", "shark", "shark", "shark", "karambwan", "karambwan", "super_combat", "super_restore", "saradomin_brew"],
+    "attackStyle": "aggressive",
+    "activePrayers": []
+  },
+  "dds_pure": {
+    "name": "DDS Pure",
+    "description": "Dragon dagger rusher — cheap, fast, 2-hit spec.",
+    "equipment": {
+      "weapon": "dragon_dagger",
+      "shield": null,
+      "helmet": null,
+      "cape": null,
+      "amulet": null,
+      "ammo": null,
+      "body": null,
+      "legs": null,
+      "gloves": null,
+      "boots": null,
+      "ring": null
+    },
+    "inventory": ["shark", "shark", "karambwan", "super_combat"],
+    "attackStyle": "aggressive",
+    "activePrayers": []
+  },
+  "claws_main": {
+    "name": "D Claws Main",
+    "description": "Slice and Dice — 4-hit cascade KO spec.",
+    "equipment": {
+      "weapon": "dragon_claws",
+      "shield": null,
+      "helmet": null,
+      "cape": null,
+      "amulet": null,
+      "ammo": null,
+      "body": null,
+      "legs": null,
+      "gloves": null,
+      "boots": null,
+      "ring": null
+    },
+    "inventory": ["shark", "shark", "karambwan", "karambwan", "super_combat", "super_restore"],
+    "attackStyle": "aggressive",
+    "activePrayers": []
+  },
+  "ranged_main": {
+    "name": "Ranged Main",
+    "description": "Rune crossbow + Rigour for sustained ranged DPS.",
+    "equipment": {
+      "weapon": "rune_crossbow",
+      "shield": null,
+      "helmet": null,
+      "cape": null,
+      "amulet": null,
+      "ammo": null,
+      "body": null,
+      "legs": null,
+      "gloves": null,
+      "boots": null,
+      "ring": null
+    },
+    "inventory": ["shark", "shark", "karambwan", "ranging", "super_restore"],
+    "attackStyle": "accurate",
+    "activePrayers": []
+  },
+  "tribrid": {
+    "name": "Tribrid",
+    "description": "Volatile staff for switches; melee primary, mage spec.",
+    "equipment": {
+      "weapon": "volatile_nightmare_staff",
+      "shield": null,
+      "helmet": null,
+      "cape": null,
+      "amulet": null,
+      "ammo": null,
+      "body": null,
+      "legs": null,
+      "gloves": null,
+      "boots": null,
+      "ring": null
+    },
+    "inventory": ["abyssal_whip", "armadyl_godsword", "shark", "shark", "karambwan", "saradomin_brew"],
+    "attackStyle": "accurate",
+    "activePrayers": []
+  },
+  "gmaul_main": {
+    "name": "Gmaul Main",
+    "description": "Granite maul for instant-spec stacking with switches.",
+    "equipment": {
+      "weapon": "granite_maul",
+      "shield": null,
+      "helmet": null,
+      "cape": null,
+      "amulet": null,
+      "ammo": null,
+      "body": null,
+      "legs": null,
+      "gloves": null,
+      "boots": null,
+      "ring": null
+    },
+    "inventory": ["abyssal_whip", "armadyl_godsword", "shark", "shark", "karambwan", "super_combat"],
+    "attackStyle": "aggressive",
+    "activePrayers": []
+  }
+}
